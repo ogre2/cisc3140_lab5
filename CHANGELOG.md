@@ -32,8 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `<animate.css>` for css animations.
   - `<feather-icons>` for iconography.
   - `<csvtojson>` for seeding our database with data from CSV file.
-  - `<helmet>` for.
-  - `<cors>` for.
+  - `<helmet>` middleware to auto setting HTTP headers.
+  - `<cors>` as express middleware for resource sharing.
   - `<dotenv>` for environment variables.
   - `<nodemon>` to monitor our files for changes and autorelaunch the dev server.
 
