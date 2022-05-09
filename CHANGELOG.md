@@ -11,17 +11,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] &mdash; (2022/05/09)
+### Updates
+- Created `<src/controllers>` subdirectory to house application controllers.
+  - Created `<Index.js>` controller file with retrieve index url function.
+- Created `<src/routes>` subdirectory to house application routers.
+  - Created `<index.js>` router file.
+- Imported index router to `<src/server.js>`.
+
+### Changes
+- Moved index GET method from `<src/server.js>` dedicated index controller within `<src/controllers>`.
+- Added descriptive comments.
+
 ## [1.0.1] &mdash;; (2022/05/09)
-## Updates
+### Updates
 - Created `<src/config>` subdirectory to house app configurations.
 - Created dedicated environment variable file.
 
-## Changes
+### Changes
 - Imported configurations into `<src/server.js>`.
 - Used configured port for server.
 
 ## [1.0.0] &mdash; (2022/05/09)
-## Updates
+### Updates
 - Installed dependencies:
   - `<Express>` as our NodeJS framework.
   - `<sqlite3>` as our database solution.
@@ -37,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `<dotenv>` for environment variables.
   - `<nodemon>` to monitor our files for changes and autorelaunch the dev server.
 
-## Changes
+### Changes
 - Added dev server start script in `<package.json>`.
 - Ignored environment variables file in `<.gitignore>`.
 - Placed `<server.js>` file inside `<src>` subdirectory.
@@ -51,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.1.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...v1.0.0
 [0.0.1]: https://github.com/ogre2/cisc3140_lab5/releases/tag/v0.0.1
