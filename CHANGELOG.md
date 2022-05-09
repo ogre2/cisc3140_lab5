@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] &mdash; (2022/05/09)
+### Updates
+- Added cars sample data as submodule.
+
 ## [1.1.0] &mdash; (2022/05/09)
 ### Updates
 - Created `<src/controllers>` subdirectory to house application controllers.
@@ -63,6 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.1.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...v1.0.0
