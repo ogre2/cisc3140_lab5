@@ -1,5 +1,5 @@
 /**
- * This router will server as the index application url router.
+ * This router will serve as the index application url router.
  * All HTTP requests/methods concerning the index url will be housed here.
  */
 
