@@ -10,7 +10,7 @@ dotenv.config({ path: path.join(__dirname, './.env') })
 
 // Exporting configurations
 module.exports = {
-    'database_name': 'cars',
+    'database_name': './src/db/db.sqlite3',
     'port': process.env.PORT || 5000,
     colors
 }
