@@ -15,6 +15,9 @@ const app = express()
 // Creating app server
 const server = http.createServer(app)
 
+// Importing index router
+const indexRouter = require('./routes')
+
 // Enabling colors
 config.colors.enable()
 
@@ -32,28 +35,8 @@ app.use(cors())
 // Using helmet
 app.use(helmet())
 
-/**
- * @param NONE
- * @method GET
- * 
- * This is a test GET request for the root directory of the API
- */
-app.get('/', (req, res) => {
-    // TODO GET root
-    try {
-        // Successful request response
-        res.status(200).json({
-            message: 'Hello world'
-        })
-    }
-    // Catch error
-    catch(error) {
-        // Unsuccessful request response
-        res.status(500).json({
-            message: error.message
-        })
-    }
-})
+// Using the index router
+app.use('/', indexRouter)
 
 /**
  * @param NONE
