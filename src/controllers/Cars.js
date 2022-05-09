@@ -22,7 +22,7 @@ exports.getAll = (req, res) => {
     // TODO GET all cars
     try {
         // SQL Query command
-        let sql = 'SELECT * FROM cars'
+        let sql = 'SELECT car_id,email,name,year,make,model FROM Cars'
         // Request paramaters
         let params = []
 
