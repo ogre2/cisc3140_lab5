@@ -11,6 +11,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] &mdash; (2022/05/09)
+### Updates
+- Created `<Cars.js>` controller file with getAll cars function.
+- Created `<cars.js>` router file.
+- Imported cars router to `<src/server.js>`.
+- Created `<src/db>` subdirectory to house all database configurations.
+- Created application database file with cars table `<src/db/db.sqlite3>`.
+  - Populated cars table with data from the csv file inside the data submodule.
+- [SQLITE table cars already exists issue](https://github.com/ogre2/cisc3140_lab5/issues/1) noted.
+
+### Changes
+- Fixed comment typo in `<src/controllers/Index.js>`.
+- Fixed comment typo in `<src/server.js>`.
+
 ## [1.1.1] &mdash; (2022/05/09)
 ### Updates
 - Added cars sample data as submodule.
@@ -67,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.2.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.0.0...v1.0.1
