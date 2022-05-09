@@ -1,5 +1,5 @@
 /**
- * This controller will server as the application index view contrller.
+ * This controller will serve as the application index view contrller.
  * All methods pertaining to the index view will be housed here.
  */
 
