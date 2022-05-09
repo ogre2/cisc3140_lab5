@@ -2,6 +2,12 @@
 const express = require('express')
 // Importing http
 const http = require('http')
+// Importing body-parser
+const bodyParser = require('body-parser')
+// Importing cors
+const cors = require('cors')
+// Importing helmet
+const helmet = require('helmet')
 // Importing config
 const config = require('./config')
 // Creating express instance
@@ -11,6 +17,20 @@ const server = http.createServer(app)
 
 // Enabling colors
 config.colors.enable()
+
+// Setting case sensitive routing
+app.set('case sensitive routing', true)
+// Setting json formatting
+app.set('json spaces', 2)
+
+// Using body-parser for urlencode
+app.use(bodyParser.urlencoded({ extended: true }))
+// Using body-parser for parsing json data
+app.use(bodyParser.json())
+// Using cors
+app.use(cors())
+// Using helmet
+app.use(helmet())
 
 /**
  * @param NONE
