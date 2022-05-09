@@ -16,7 +16,9 @@ const app = express()
 const server = http.createServer(app)
 
 // Importing index router
-const indexRouter = require('./routes')
+const indexRouter = require('./routes/index')
+// Importing cars router
+const carsRouter = require('./routes/cars')
 
 // Enabling colors
 config.colors.enable()
@@ -37,6 +39,8 @@ app.use(helmet())
 
 // Using the index router
 app.use('/', indexRouter)
+// Using the cars router
+app.use('/api', carsRouter)
 
 /**
  * @param NONE
