@@ -41,14 +41,14 @@ let db = new sqlite3.Database(config.database_name, (err) => {
         console.log('Connected to the database...'.blue)
 
         // Creating the database cars table
-        db.run(`CREATE TABLE cars(
+        db.run(`CREATE TABLE IF NOT EXISTS Cars(
             car_id INT PRIMARY KEY,
             email TEXT UNIQUE,
             name TEXT,
             year INT,
             make TEXT,
             model TEXT,
-            judge_id TEXT,
+            judge_id VARCHAR(80),
             judge_name TEXT,
             racer_turbo INT,
             racer_supercharged INT,
@@ -89,7 +89,7 @@ let db = new sqlite3.Database(config.database_name, (err) => {
                 csv().fromFile(DATA)
                     .then(data => {
                         // SQL insert command to get data from the csv file into the cars table
-                        let insert = 'INSERT INTO cars (Car_ID, Email, Name, Year, Make, Model, Judge_ID, Judge_Name, Racer_Turbo, Racer_Supercharged, Racer_Performance, Racer_Horsepower, Car_Overall, Engine_Modifications, Engine_Performance, Engine_Chrome, Engine_Detailing, Engine_Cleanliness, Body_Frame_Undercarriage, Body_Frame_Suspension, Body_Frame_Chrome, Body_Frame_Detailing, Body_Frame_Cleanliness, Mods_Paint, Mods_Body, Mods_Wrap, Mods_Rims, Mods_Interior, Mods_Other, Mods_ICE, Mods_Aftermarket, Mods_WIP, Mods_Overall) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
+                        let insert = 'INSERT or IGNORE INTO cars (Car_ID, Email, Name, Year, Make, Model, Judge_ID, Judge_Name, Racer_Turbo, Racer_Supercharged, Racer_Performance, Racer_Horsepower, Car_Overall, Engine_Modifications, Engine_Performance, Engine_Chrome, Engine_Detailing, Engine_Cleanliness, Body_Frame_Undercarriage, Body_Frame_Suspension, Body_Frame_Chrome, Body_Frame_Detailing, Body_Frame_Cleanliness, Mods_Paint, Mods_Body, Mods_Wrap, Mods_Rims, Mods_Interior, Mods_Other, Mods_ICE, Mods_Aftermarket, Mods_WIP, Mods_Overall) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
                         
                         // Loop through each entry in the cars data csv
                         for(entry of data) {
