@@ -11,6 +11,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] &mdash; (2022/05/09)
+## Updates
+- Installed dependencies:
+  - `<Express>` as our NodeJS framework.
+  - `<sqlite3>` as our database solution.
+  - `<ejs>` as our view engine.
+  - `<express-ejs-layouts>` for view templating and app layout.
+  - `<Bootstrap>` for CSS styling.
+  - `<jquery>` and `<popperjs>` to work with Bootstrap.
+  - `<animate.css>` for css animations.
+  - `<feather-icons>` for iconography.
+  - `<csvtojson>` for seeding our database with data from CSV file.
+  - `<helmet>` for.
+  - `<cors>` for.
+  - `<dotenv>` for environment variables.
+  - `<nodemon>` to monitor our files for changes and autorelaunch the dev server.
+
+## Changes
+- Added dev server start script in `<package.json>`.
+- Ignored environment variables file in `<.gitignore>`.
+- Placed `<server.js>` file inside `<src>` subdirectory.
+- Created test GET request for API inside `<src/server.js>`.
+
 ## [0.0.1] &mdash; (2022/05/08)
 ### Updates
 - Added [CHANGELOG.md](https://github.com/ogre2/cisc3140_lab5/CHANGELOG.md).
@@ -19,4 +42,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.0.0]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...v1.0.0
 [0.0.1]: https://github.com/ogre2/cisc3140_lab5/releases/tag/v0.0.1
