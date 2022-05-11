@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-        
+
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/animate/animate.min.css" />
@@ -26,9 +26,26 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <![endif]-->
+
+        <style>
+            ul {
+                list-style-type: none;
+                /* border: 1px solid red; */
+                padding: 0;
+            }
+            ul li {
+                display: inline;
+            }
+        </style>
     </head>
 
     <body id="page-top" data-spy="scroll">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <%- include('../includes/navbar') %>
+        </nav>
+        <!-- /.navigation -->
+
         <!-- App -->
         <div id="app" class="app-wrapper">
             <%- body %>
