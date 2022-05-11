@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.2] &mdash; (2022/05/11)
+### Updates
+- Added favicon to application.
+- Added Google fonts to application.
+
+### Changes
+- Cleaned up the main layout file, added comments.
+- Enabled imported/linked frontend assets to load.
+- Passed title in index view render (`<src/controllers/Index.js>`).
+
 ## [1.4.1] &mdash; (2022/05/11)
 ### Updates
 - Linked frontend assets in `<src/server.js>`
