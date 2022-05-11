@@ -11,6 +11,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] &mdash; (2022/05/10)
+
+### Updates
+- Added `<GET>` by ID function in the cars controller.
+  - Used function in the cars router.
+- Added `<GET>` by make function in the cars controller.
+  - Used functon in the cars router.
+- Added `<POST>` function in cars controller to allow creating new car entries.
+  - Used function in the cars router.
+- Added `<PATCH>` function in cars controller to allow updating/editing car entries.
+
+### Changes
+- Modified comments in `<src/controllers/Cars.js>` and `<src/routes/cars.js>`.
+- Relaunched database.
+
 ## [1.2.1] &mdash; (2022/05/09)
 ### Updates
 - Updated sql query in `<src/controllers/Cars>` to return specific keys from database.
@@ -88,6 +103,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.3.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.0...v1.1.1
