@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!-- Basic app needs -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/animate/animate.min.css" />
+
+        <!-- Title & Favicon -->
+        <title>LAB5 &mdash; <%= title %></title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/x-icon" />
+        <link rel="icon" href="android-chrome-192x192.png" type="image/x-icon" />
+        <!-- HTML5Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <![endif]-->
     </head>
-    <body>
-        <%- body %>
+
+    <body id="page-top" data-spy="scroll">
+        <!-- App -->
+        <div id="app" class="app-wrapper">
+            <%- body %>
+        </div>
+        <!-- /.app -->
+
+        <!-- jQuery -->
+        <script src="/jquery/jquery.min.js"></script>
+        <!-- Popper -->
+        <script src="/popper/popper.min.js"></script>
+        <!-- Feather Icons -->
+        <script src="/feathers/feather.min.js"></script>
     </body>
 </html>
