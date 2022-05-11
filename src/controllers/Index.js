@@ -21,7 +21,10 @@ exports.getIndex = (req, res) => {
     // TODO GET root url
     try {
         // Rendering the index view with test view content
-        res.status(200).render('index', { message: 'Hello World' })
+        res.status(200).render('index', { 
+            title: 'Home', 
+            message: 'Hello World' 
+        })
     }
     // Catch error
     catch(error) {
