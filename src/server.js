@@ -2,8 +2,12 @@
 const express = require('express')
 // Importing http
 const http = require('http')
+// Importing path
+const path = require('path')
 // Importing body-parser
 const bodyParser = require('body-parser')
+// Importing layouts
+const layouts = require('express-ejs-layouts')
 // Importing cors
 const cors = require('cors')
 // Importing helmet
@@ -23,11 +27,19 @@ const carsRouter = require('./routes/cars')
 // Enabling colors
 config.colors.enable()
 
+// Setting the view engine to ejs
+app.set('view engine', 'ejs')
+// Setting directory for all app views
+app.set('views', path.resolve(__dirname, '../client/views'))
+// Setting location of main layout file
+app.set('layout', 'layouts/layout')
 // Setting case sensitive routing
 app.set('case sensitive routing', true)
 // Setting json formatting
 app.set('json spaces', 2)
 
+// Using layouts
+app.use(layouts)
 // Using body-parser for urlencode
 app.use(bodyParser.urlencoded({ extended: true }))
 // Using body-parser for parsing json data
