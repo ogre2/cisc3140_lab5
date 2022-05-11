@@ -48,6 +48,18 @@ app.use(bodyParser.json())
 app.use(cors())
 // Using helmet
 app.use(helmet())
+// Linking jQuery
+app.use('/jquery', express.static(path.resolve(__dirname, '../node_modules/jquery/dist/')))
+// Linking Popper
+app.use('/popper', express.static(path.resolve(__dirname, '../node_modules/@popperjs/core/dist/umd/')))
+// Linking animate.css
+app.use('/animate', express.static(path.resolve(__dirname, '../node_modules/animate.css/')))
+// Linking feather-icons
+app.use('/feathers', express.static(path.resolve(__dirname, '../node_modules/feather-icons/dist/')))
+// Linking Bootstrap
+app.use(express.static(path.resolve(__dirname, '../node_modules/bootstrap/dist/')))
+// Linking public files
+app.use(express.static(path.resolve(__dirname, '../client/public')))
 
 // Using the index router
 app.use('/', indexRouter)
