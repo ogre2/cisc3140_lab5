@@ -20,10 +20,8 @@ config.colors.enable()
 exports.getIndex = (req, res) => {
     // TODO GET root url
     try {
-        // Successful request response
-        res.status(200).json({
-            message: 'Hello world'
-        })
+        // Rendering the index view with test view content
+        res.status(200).render('index', { message: 'Hello World' })
     }
     // Catch error
     catch(error) {
