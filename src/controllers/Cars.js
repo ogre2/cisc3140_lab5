@@ -244,7 +244,7 @@ exports.updateCar = (req, res) => {
         // Log the error message to the console
         console.log(error.message)
 
-        // Sett the response status to 500 and show the error as message
+        // Set the response status to 500 and show the error as message
         res.status(500).json({
             message: error.message
         })
