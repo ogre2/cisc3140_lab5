@@ -64,7 +64,7 @@ app.use(express.static(path.resolve(__dirname, '../client/public')))
 // Using the index router
 app.use('/', indexRouter)
 // Using the cars router
-app.use('/api', carsRouter)
+app.use('/cars', carsRouter)
 
 /**
  * @param NONE
