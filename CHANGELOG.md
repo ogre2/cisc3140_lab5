@@ -11,8 +11,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.3.0] &mdash; (2022/05/10)
+## [1.4.0] &mdash; (2022/05/11)
+### Updates
+- Created `<client>` directory to house all the frontend code.
+- Created the `<client/views>` subdirectory inside to house all application views.
+- Created the `<client/views/layout>` subdirectory inside to house the main app layout configuration.
+- Imported `<path>` and `<express-ejs-layouts>` in server file.
+- Configured `<EJS>` as view engine for application.
+- Enabled `<express-ejs-layouts>` as app layout solution.
 
+### Changes
+- Linked app to views layout in `<src/server.js>`.
+- Linked app to views directory and configured the layout file.
+- Modified getIndex function in `<src/controllers/Index.js>` to render the `<index>` EJS view.
+
+## [1.3.0] &mdash; (2022/05/10)
 ### Updates
 - Added `<GET>` by ID function in the cars controller.
   - Used function in the cars router.
@@ -103,6 +116,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.4.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.1.1...v1.2.0
