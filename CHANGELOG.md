@@ -11,6 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.4] &mdash; (2022/05/11)
+### Updates
+- Created `<client/views/includes>` subdirectory to house external components.
+- Created navigation file in `<client/views/includes/navbar.ejs>` file for the application.
+  
+### Changes
+- Modified index view text.
+- Testing minimal custom styling in main layout file.
+
 ## [1.4.3] &mdash; (2022/05/11)
 ### Changes
 - Modified the cars URLs in both `<src/server.js>` and `<src/routes/cars.js>`.
@@ -138,6 +147,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.4.4]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.3...v1.4.4
 [1.4.3]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.2...v1.4.3
 [1.4.2]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.0...v1.4.1
