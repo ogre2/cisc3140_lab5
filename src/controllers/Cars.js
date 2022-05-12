@@ -42,7 +42,7 @@ exports.getAll = (req, res) => {
                 let data = JSON.stringify(rows)
                 let cars = JSON.parse(data)
 
-                res.status(200).render('cars', {
+                res.status(200).render('api', {
                     title: 'Cars',
                     cars
                 })
