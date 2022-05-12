@@ -4,7 +4,6 @@
  */
 
 // Importing configurations
-const { json } = require('express/lib/response')
 const config = require('../config')
 // Importing database
 const db = require('../db')
