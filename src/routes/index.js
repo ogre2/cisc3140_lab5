@@ -5,10 +5,12 @@
 
 // Importing configurations
 const config = require('../config')
+// Importing path
+const path = require('path')
 // Importing express router
 const router = require('express').Router()
 // Importing index controller
-const indexController = require('../controllers')
+const indexController = require(path.resolve(__dirname, '../controllers/Index.js'))
 
 // Enabling colors
 config.colors.enable()
