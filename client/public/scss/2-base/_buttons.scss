@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+[8. Buttons]
+*/
+/*---------------------------------------------------
+[Button]
+---------------------------------------------------*/
+button {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: 0;
+    }
+}
+.btn {
+    padding: 12px 20px;
+    @include easeInOut35s;
+    .icon {
+        font-size: 12px;
+        opacity: 0;
+        margin-left: -24px;
+        transform: rotate(-90deg);
+    }
+    &:hover {
+        .icon {
+            opacity: 1;
+            margin-left: 0;
+            transform: rotate(0deg);
+        }
+    }
+    &.btn-primary {
+        background-color: $c-blue!important;
+    }
+}

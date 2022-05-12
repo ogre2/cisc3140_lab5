@@ -1,0 +1,66 @@
+/*------------------------------------------------------------------
+[6. Body]
+*/
+/*---------------------------------------------------
+[Canvas]
+---------------------------------------------------*/
+html,
+body {
+    @include fullSize;
+    font-family: 'Inter', sans-serif;
+    background-color: $c-cultured2;
+}
+/*---------------------------------------------------
+[Areas]
+---------------------------------------------------*/
+div,
+section,
+footer {
+    margin: 0;
+}
+section,
+footer {
+    min-height: 200px;
+    padding: 100px 0;
+}
+/*---------------------------------------------------
+[Lists]
+---------------------------------------------------*/
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+/*---------------------------------------------------
+[Links]
+---------------------------------------------------*/
+a {
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    &:focus {
+        outline: none;
+    }
+}
+/*---------------------------------------------------
+[Forms]
+---------------------------------------------------*/
+input[type="text"],
+input[type="button"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+input[type="search"],
+input[type="submit"] {
+    border: 1px solid $c-grey;
+    border-radius: 5px;
+    padding: 10px 15px;
+    outline: none;
+    text-indent: 10px;
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        @include lightShadow;
+    }
+    // @include lightShadow;
+}

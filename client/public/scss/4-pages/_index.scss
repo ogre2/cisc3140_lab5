@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+[Index Page]
+*/
+/*---------------------------------------------------
+[Header]
+---------------------------------------------------*/
+#indexHeader {
+    height: 100vh;
+    width: 100%;
+    &.background {
+        background: $c-cultured2;
+    }
+    .jumbotron {
+        p {
+            .underline {
+                font-weight: 500;
+                border-bottom: 2px solid $c-blue;
+            }
+        }
+        button {
+            i {
+                display: none;
+            }
+        }
+    }
+}
