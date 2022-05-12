@@ -8,7 +8,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/ogre2/cisc3140_lab5?style=social)
 
 CISC3140 Lab 5 is a fullstack web application built with Node/Express, SQLite, EJS, and  
-Bootstrap that allows users to view and update data about cars. You can view the API here:
+Bootstrap that allows users to view and update data about cars. You can view the app here: [https://cisc3140lab5.herokuapp.com/](https://cisc3140lab5.herokuapp.com/).
 
 ## **Prerequisites**
 
