@@ -4,6 +4,7 @@
  */
 
 // Importing configurations
+const { json } = require('express/lib/response')
 const config = require('../config')
 // Importing database
 const db = require('../db')
@@ -22,12 +23,12 @@ exports.getAll = (req, res) => {
     // TODO GET all cars
     try {
         // SQL Query command
-        let sql = 'SELECT car_id,email,name,year,make,model FROM Cars'
+        let sql = 'SELECT car_id,email,name,year,make,model,score FROM Cars ORDER BY score DESC'
         // Request paramaters
         let params = []
 
         // Retrieve all the car data from the database
-        db.all(sql, params, (err, row) => {
+        db.all(sql, params, (err, rows) => {
             // If we encounter an error retrieving the cars data
             if(err) {
                 // Set the response status to 400 and show error as message
@@ -38,9 +39,12 @@ exports.getAll = (req, res) => {
             // If we are successful in retrieving cars information
             else {
                 // Set response status to 200 and show the cars data
-                res.status(200).json({
-                    message: 'success',
-                    data: row
+                let data = JSON.stringify(rows)
+                let cars = JSON.parse(data)
+
+                res.status(200).render('cars', {
+                    title: 'Cars',
+                    cars
                 })
             }
         })
