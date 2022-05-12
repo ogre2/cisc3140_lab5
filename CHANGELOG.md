@@ -11,6 +11,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] &mdash; (2022/05/12)
+### Updates
+- Installed `<AOS>` for scrolling animations.
+- Created `<client/public/scss>` directory to house custom SASS styling.
+- Generated `<client/public/css>` directory for compiled SASS stlying into CSS.
+- Created `<client/views/includes>` directory for layout components.
+  - Created `<navbar.ejs>` file for the application navigation.
+- Created `<client/public/js>` directory to house custom javascript files.
+
+### Changes
+- Modified `<client/views/index.ejs>` view.
+- Modified root cars controller router url in `<src/server.js>`.
+- Prepared data for frontend rendering in `<src/controllers/Cars.js>`.
+- Imported `<AOS>` into main layout file.
+
 ## [1.4.5] &mdash; (2022/05/12)
 ### Changes
 - Relocated favicon files to `<client/public/img>` directory.
@@ -151,6 +166,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added project description and prerequisites to [README.md](https://github.com/ogre2/cisc3140_lab5/README.md).
 
 [Unreleased]: https://github.com/ogre2/cisc3140_lab5/compare/v0.0.1...HEAD
+[1.5.0]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.5...v1.5.0
 [1.4.5]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.4...v1.4.5
 [1.4.4]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.3...v1.4.4
 [1.4.3]: https://github.com/ogre2/cisc3140_lab5/compare/v1.4.2...v1.4.3
