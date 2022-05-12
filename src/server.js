@@ -56,6 +56,8 @@ app.use('/popper', express.static(path.resolve(__dirname, '../node_modules/@popp
 app.use('/animate', express.static(path.resolve(__dirname, '../node_modules/animate.css/')))
 // Linking feather-icons
 app.use('/feathers', express.static(path.resolve(__dirname, '../node_modules/feather-icons/dist/')))
+// Linking AOS
+app.use('/aos', express.static(path.resolve(__dirname, '../node_modules/aos/dist/')))
 // Linking Bootstrap
 app.use(express.static(path.resolve(__dirname, '../node_modules/bootstrap/dist/')))
 // Linking public files
@@ -64,7 +66,7 @@ app.use(express.static(path.resolve(__dirname, '../client/public')))
 // Using the index router
 app.use('/', indexRouter)
 // Using the cars router
-app.use('/cars', carsRouter)
+app.use('/api', carsRouter)
 
 /**
  * @param NONE
