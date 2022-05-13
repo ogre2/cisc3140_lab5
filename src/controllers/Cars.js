@@ -37,11 +37,12 @@ exports.getAll = (req, res) => {
             }
             // If we are successful in retrieving cars information
             else {
-                // Set response status to 200 and show the cars data
+                // Parse the JSON data for frontend rendering
                 let data = JSON.stringify(rows)
                 let cars = JSON.parse(data)
 
-                res.status(200).render('api', {
+                // Set response status to 200 and show the cars data
+                res.status(200).render('cars', {
                     title: 'Cars',
                     cars
                 })
@@ -156,8 +157,21 @@ exports.getMake = (req, res) => {
  * @param {*} req 
  * @param {*} res
  * 
- * This function will take information about a car and create a new car 
- * entry in the database. 
+ * This function will retrieve the add new car form for users to be able 
+ * to create new car entries into the database.
+ */
+exports.getAdd = (req, res) => {
+    res.render('new', {
+        title: 'New Car'
+    })
+}
+
+/**
+ * @param {*} req 
+ * @param {*} res 
+ * 
+ * This function will collect user inputted data from the new car form
+ * and create a new car entry into the database which can be seen in /cars.
  */
 exports.addCar = (req, res) => {
     // TODO POST new car to database
@@ -175,16 +189,22 @@ exports.addCar = (req, res) => {
                 console.log(err.message.red)
 
                 // Set the response status to 400 and show the error as message
-                res.status(400).json({
+                res.status(400).render('submit', {
+                    title: 'Submit',
                     message: err.message
                 })
             }
             // If we successfully create a new car entry
             else {
+                // Parse the JSON data for frontend rendering
+                let data = JSON.stringify(req.body)
+                let car = JSON.parse(data)
+
                 // Set the response status to 200 and show the data posted
-                res.status(200).json({
+                res.status(200).render('submit', {
+                    title: 'Succes',
                     message: 'success',
-                    dat: req.body
+                    car
                 })
             } 
         })
@@ -234,7 +254,7 @@ exports.updateCar = (req, res) => {
                 // Set the response status to 200 and show the data modified
                 res.status(200).json({
                     message: 'success',
-                    dat: {
+                    data: {
                         car_id: req.params.id,
                         updates: req.body
                     }
