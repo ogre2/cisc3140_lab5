@@ -813,7 +813,7 @@ input[type="search"],
 input[type="submit"] {
   border: 1px solid #EDEDED;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   outline: none;
   text-indent: 10px;
 }
@@ -1018,6 +1018,43 @@ button:hover, button:focus {
 
 #indexHeader .jumbotron button i {
   display: none;
+}
+
+#apiHeader {
+  min-height: 200px;
+  width: 100%;
+}
+
+#apiHeader.background {
+  background-color: #F6F6F6;
+}
+
+#apiHeader .search-form {
+  background-color: #FFFFFF;
+}
+
+#apiHeader .search-form .form-row {
+  height: 80px;
+  padding: 15px 0;
+}
+
+#apiHeader .search-form .form-row .form-area {
+  height: 100%;
+  width: 100%;
+}
+
+#apiHeader .search-form .form-row .form-area .search-bar {
+  width: 400px;
+  margin: 0 5px 0 5px;
+  border: 0px;
+}
+
+#apiHeader .search-form .form-row .form-area .search-bar:hover, #apiHeader .search-form .form-row .form-area .search-bar:focus {
+  box-shadow: none;
+}
+
+#data .content {
+  background-color: #FFFFFF;
 }
 
 /* @import "debugging.css"; */
