@@ -70,7 +70,7 @@
                         <th scope="col">Make</th>
                         <th scope="col">Model</th>
                         <th scope="col">Score</th>
-                        <th scope="col">Action</th>
+                        <!-- <th scope="col">Action</th> -->
                     </tr>
                     <!-- /.column-headings -->
                 </thead>
@@ -88,9 +88,11 @@
                             <td><%= cars[i].make %></td>
                             <td><%= cars[i].model %></td>
                             <td><%= cars[i].score %></td>
-                            <td style="list-style-type:none; display: flex; justify-content:space-between">
-                                <button class="btn-edit"><i data-feather="edit"></i></button>
-                            </td>
+                            <!-- <td style="list-style-type:none; display: flex; justify-content:space-between">
+                                <a href="/cars/entry/edit" class="link">
+                                    <button class="btn-edit"><i data-feather="edit"></i></button>
+                                </a>
+                            </td> -->
                         </tr>
                     <% } %>
                     <!-- /.rendering-data -->
