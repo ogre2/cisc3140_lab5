@@ -221,6 +221,12 @@ exports.addCar = (req, res) => {
     }
 }
 
+exports.getEdit = (req, res) => {
+    res.status(200).render('edit', {
+        title: 'Edit'
+    })
+}
+
 /**
  * @param {*} req 
  * @param {*} res
@@ -228,7 +234,7 @@ exports.addCar = (req, res) => {
  * This function will will edit/update information on an existing car entry in the database. 
  * The user can update a singular key for the entry or multiple keys at once.
  */
-exports.updateCar = (req, res) => {
+ exports.editCar = (req, res) => {
     // TODO patch car data
     try {
         // SQL Query command
@@ -251,6 +257,10 @@ exports.updateCar = (req, res) => {
             }
             // If we successfully update the car car entry
             else {
+                // Parse the JSON data for frontend rendering
+                let data = JSON.stringify(req.body)
+                let car = JSON.parse(data)
+
                 // Set the response status to 200 and show the data modified
                 res.status(200).json({
                     message: 'success',
