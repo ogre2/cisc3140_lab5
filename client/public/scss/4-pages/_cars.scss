@@ -1,0 +1,33 @@
+#apiHeader {
+    min-height: 200px;
+    width: 100%;
+    &.background {
+        background-color: $c-cultured2;
+    }
+    .search-form {
+        background-color: $c-white;
+        .form-row {
+            height: 80px;
+            padding: 15px 0;
+            .form-area {
+                height: 100%;
+                width: 100%;
+                .search-bar {
+                    width: 400px;
+                    margin: 0 5px 0 5px;
+                    border: 0px;
+                    &:hover,
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#data {
+    .content {
+        background-color: $c-white;
+    }
+}
