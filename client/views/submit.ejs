@@ -1,0 +1,31 @@
+<header id="sectionHeader" class="background">
+    <!-- Container -->
+    <div class="container d-flex flex-column justify-content-center">
+        <!-- Area Title -->
+        <div class="row p-t-50">
+            <% if (message == 'success') { %>
+                <div class="alert alert-info" role="alert">
+                    Successfully created new car
+    
+                    <ul>
+                        <li>Car_ID: <%= car.car_id %></li>
+                        <li>Email: <%= car.email %></li>
+                        <li>Name: <%= car.name %></li>
+                        <li>Year: <%= car.year %></li>
+                        <li>Make: <%= car.make %></li>
+                        <li>Model: <%= car.model %></li>
+                        <li>Score: <%= car.score %></li>
+                    </ul>
+                </div>
+
+                <a href="/cars" class="link p-l-0"><button class="btn btn-primary">Go Back</button></a>
+            <% } else { %>   
+                <div class="alert alert-danger" role="alert">    
+                    <p><%= message %></p>
+                </div>
+            <% } %>
+        </div>
+        <!-- /.area-title -->
+    </div>
+    <!-- /.container -->
+</header>
