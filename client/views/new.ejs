@@ -1,0 +1,178 @@
+<header id="sectionHeader" class="background">
+    <!-- Container -->
+    <div class="container d-flex flex-column justify-content-center">
+        <!-- Area Title -->
+        <div class="row p-t-50">
+            <h2>Add car</h2>         
+        </div>
+        <!-- /.area-title -->
+    </div>
+    <!-- /.container -->
+</header>
+
+<section id="createArea">
+    <!-- Container -->
+    <div class="container">
+        <div class="content">
+            <form action="submit-car" method="POST">
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="car_id" class="form-label">Car ID</label>
+                        <input type="number" class="form-control" name="car_id" id="car_id" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="text" class="form-control" name="email" id="email" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="year" class="form-label">Year</label>
+                        <input type="number" class="form-control" name="year" id="year" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="make" class="form-label">Make</label>
+                        <input type="text" class="form-control" name="make" id="make" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="model" class="form-label">Model</label>
+                        <input type="text" class="form-control" name="model" id="model" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="judge_id" clas="form-label">Judge ID</label>
+                        <input type="text" class="form-control" name="judge_id" id="judge_id" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="judge_name" clas="form-label">Judge Name</label>
+                        <input type="text" class="form-control" name="judge_name" id="judge_name" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="racer_turbo" clas="form-label">Racer Turbo Score</label>
+                        <input type="number" class="form-control" name="racer_turbo" id="racerTurbo" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="racer_supercharged" clas="form-label">Racer Supercharged Score</label>
+                        <input type="number" class="form-control" name="racer_supercharged" id="racerSupercharged" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="racer_performance" clas="form-label">Racer Performance Score</label>
+                        <input type="number" class="form-control" name="racer_performance" id="racer_performance" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="racer_horsepower" clas="form-label">Racer Horsepower Score</label>
+                        <input type="number" class="form-control" name="racer_horsepower" id="racer_horsepower" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="car_overall" clas="form-label">Car Overall Score</label>
+                        <input type="number" class="form-control" name="car_overall" id="car_overall" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="engine_modifications" clas="form-label">Engine Modifications Score</label>
+                        <input type="number" class="form-control" name="engine_modifications" id="engine_modifications" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="engine_performance" clas="form-label">Engine Performance Score</label>
+                        <input type="number" class="form-control" name="engine_performance" id="engine_performance" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="engine_chrome" clas="form-label">Engine Chrome Score</label>
+                        <input type="number" class="form-control" name="engine_chrome" id="engine_chrome" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="engine_detailing" clas="form-label">Engine Detailing Score</label>
+                        <input type="number" class="form-control" name="engine_detailing" id="engine_detailing" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="engine_cleanliness" clas="form-label">Engine Cleanliness Score</label>
+                        <input type="number" class="form-control" name="engine_cleanliness" id="engine_cleanliness" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="body_frame_undercarriage" clas="form-label">Body Frame Undercarriage Score</label>
+                        <input type="number" class="form-control" name="body_frame_undercarriage" id="body_frame_undercarriage" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="body_frame_suspension" clas="form-label">Body Frame Suspension Score</label>
+                        <input type="number" class="form-control" name="body_frame_suspension" id="body_frame_suspension" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="body_frame_chrome" clas="form-label">Body Frame Chrome Score</label>
+                        <input type="number" class="form-control" name="body_frame_chrome" id="body_frame_chrome" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="body_frame_detailing" clas="form-label">Body Frame Detailing Score</label>
+                        <input type="number" class="form-control" name="body_frame_detailing" id="body_frame_detailing" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="body_frame_cleanliness" clas="form-label">Body Frame Cleanliness Score</label>
+                        <input type="number" class="form-control" name="body_frame_cleanliness" id="body_frame_cleanliness" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_paint" clas="form-label">Mods Paint Score</label>
+                        <input type="number" class="form-control" name="mods_paint" id="mods_paint" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="mods_body" clas="form-label">Mods Body Score</label>
+                        <input type="number" class="form-control" name="mods_body" id="mods_body" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_wrap" clas="form-label">Mods Wrap Score</label>
+                        <input type="number" class="form-control" name="mods_wrap" id="mods_wrap" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_rims" clas="form-label">Mods Rims Score</label>
+                        <input type="number" class="form-control" name="mods_rims" id="mods_rims" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-md-3">
+                        <label for="mods_interior" clas="form-label">Mods Interior Score</label>
+                        <input type="number" class="form-control" name="mods_interior" id="mods_interior" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_other" clas="form-label">Mods Other Score</label>
+                        <input type="number" class="form-control" name="mods_other" id="mods_other" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_ice" clas="form-label">Mods ICE Score</label>
+                        <input type="number" class="form-control" name="mods_ice" id="mods_ice" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between m-b-25">
+                    <div class="col-md-3">
+                        <label for="mods_aftermarket" clas="form-label">Mods Aftermarket Score</label>
+                        <input type="number" class="form-control" name="mods_aftermarket" id="mods_aftermarket" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_wip" clas="form-label">Mods WIP Score</label>
+                        <input type="number" class="form-control" name="mods_wip" id="mods_wip" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="mods_overall" clas="form-label">Mods Overall Score</label>
+                        <input type="number" class="form-control" name="mods_overall" id="mods_overall" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
