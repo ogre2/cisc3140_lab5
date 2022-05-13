@@ -55,7 +55,6 @@ router.get('/new/car', carsController.getAdd)
  */
 router.post('/new/submit-car', carsController.addCar)
 
-router.get('/entry/edit', carsController.getEdit)
 /**
  * @method PATCH
  * 

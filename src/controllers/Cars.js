@@ -221,12 +221,6 @@ exports.addCar = (req, res) => {
     }
 }
 
-exports.getEdit = (req, res) => {
-    res.status(200).render('edit', {
-        title: 'Edit'
-    })
-}
-
 /**
  * @param {*} req 
  * @param {*} res
