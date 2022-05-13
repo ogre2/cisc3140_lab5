@@ -40,12 +40,20 @@ router.get('/:id', carsController.getID)
 router.get('/make/:make', carsController.getMake)
 
 /**
+ * @method GET
+ * 
+ * This method will use the express router to get the create new car form
+ * database using the controller's getAdd function.
+ */
+router.get('/new/car', carsController.getAdd)
+
+/**
  * @method POST
  * 
- * This method will use the express router to post a new car to the application 
- * database using the controller's addCar function.
+ * This method will use the express router to post a new car to the database
+ * using the controller's addCar function.
  */
-router.post('/', carsController.addCar)
+router.post('/new/submit-car', carsController.addCar)
 
 /**
  * @method PATCH
