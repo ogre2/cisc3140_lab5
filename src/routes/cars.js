@@ -55,13 +55,14 @@ router.get('/new/car', carsController.getAdd)
  */
 router.post('/new/submit-car', carsController.addCar)
 
+router.get('/entry/edit', carsController.getEdit)
 /**
  * @method PATCH
  * 
  * This method will use the express router to edit an existing car in the application 
  * database using the controller's updateCar function.
  */
-router.patch('/:id', carsController.updateCar)
+router.patch('/:id', carsController.editCar)
 
 // Exporting router
 module.exports = router
